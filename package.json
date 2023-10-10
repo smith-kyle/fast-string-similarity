@@ -1,0 +1,34 @@
+{
+  "name": "fast-string-similarity",
+  "version": "0.0.1",
+  "description": "Native node module for string similarity",
+  "main": "index.js",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp build",
+    "test": "mocha",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "string compare",
+    "string similarity"
+  ],
+  "author": "Kyle Smith",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "node-gyp": "^9.4.0"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.18.0"
+  },
+  "files": [
+    "build/Release/FastStringCompare.node",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smith-kyle/fast-string-similarity"
+  }
+}
